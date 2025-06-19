@@ -62,23 +62,23 @@ class MainActivity : AppCompatActivity() {
      */
     private fun initializeSampleData() {
         // Sample data as per requirements
-        songTitles[0] = "Song A"
-        artistNames[0] = "Artist A"
+        songTitles[0] = "Nokia"
+        artistNames[0] = "Drake"
         ratings[0] = 4
         comments[0] = "Rap"
 
-        songTitles[1] = "Song B"
-        artistNames[1] = "Artist B"
+        songTitles[1] = "Work"
+        artistNames[1] = "Rihana"
         ratings[1] = 1
         comments[1] = "Dance song"
 
-        songTitles[2] = "Song C"
-        artistNames[2] = "Artist C"
+        songTitles[2] = "Snooze"
+        artistNames[2] = "SZA"
         ratings[2] = 2
         comments[2] = "Best love song"
 
-        songTitles[3] = "Song D"
-        artistNames[3] = "Artist D"
+        songTitles[3] = "Can We Be Lovers"
+        artistNames[3] = "Teddy Pendagrass"
         ratings[3] = 3
         comments[3] = "Memories"
 

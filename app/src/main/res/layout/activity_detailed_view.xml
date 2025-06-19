@@ -7,16 +7,19 @@
     android:padding="16dp"
     tools:context=".DetailedViewActivity">
 
+
+
     <!-- Header -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="🎵 Playlist Details"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text=" Playlist Details"
+        android:textColor="#A1887F"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/primary_text"
-        android:gravity="center"
-        android:layout_marginBottom="24dp" />
+        tools:ignore="HardcodedText" />
 
     <!-- Control Buttons -->
     <LinearLayout
@@ -33,9 +36,10 @@
             android:layout_weight="1"
             android:background="@color/button_primary"
             android:elevation="2dp"
-            android:text="📝 Show Songs"
+            android:text="Show Songs"
             android:textColor="#212121"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/btnCalculateAverage"
@@ -45,9 +49,10 @@
             android:layout_weight="1"
             android:background="@color/button_secondary"
             android:elevation="2dp"
-            android:text="📊 Average Rating"
+            android:text="Average Rating"
             android:textColor="#263238"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="ButtonStyle,HardcodedText,VisualLintButtonSize" />
 
     </LinearLayout>
 
@@ -64,11 +69,13 @@
             android:id="@+id/tvDisplayArea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Click buttons above to view playlist information"
+            android:text="Click buttons above to view playlist information"
             android:textSize="16sp"
-            android:textColor="@color/primary_text"
+            android:textColor="@color/black"
             android:lineSpacingExtra="4dp"
-            android:fontFamily="monospace" />
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            tools:ignore="HardcodedText" />
 
     </ScrollView>
 
@@ -77,12 +84,13 @@
         android:id="@+id/btnBackToMain"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="⬅️ Back to Main Screen"
+        android:text="Back to Main Screen"
         android:textSize="16sp"
         android:textStyle="bold"
         android:background="@color/button_back"
         android:textColor="@color/white"
-        android:elevation="4dp" />
+        android:elevation="4dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 </LinearLayout>
 

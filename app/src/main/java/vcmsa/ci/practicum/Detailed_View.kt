@@ -1,6 +1,5 @@
 package vcmsa.ci.practicum
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -99,7 +98,6 @@ class DetailedViewActivity : AppCompatActivity() {
     /**
      * Calculate and display average rating using loops
      */
-    @SuppressLint("DefaultLocale")
     private fun calculateAndDisplayAverage() {
         if (songCount == 0) {
             showErrorMessage("No songs in playlist to calculate average!")
