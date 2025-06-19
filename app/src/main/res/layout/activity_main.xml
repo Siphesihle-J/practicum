@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎵 Music Playlist Manager"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create and manage your favorite songs"
+            android:textSize="16sp"
+            android:textColor="@color/secondary_text"
+            android:layout_marginTop="8dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Add to Playlist Button -->
+        <Button
+            android:id="@+id/btnAddToPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Add Song to Playlist"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/button_primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            android:elevation="4dp" />
+
+        <!-- View Details Button -->
+        <Button
+            android:id="@+id/btnViewDetails"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/button_secondary"
+            android:elevation="4dp"
+            android:text="View Playlist Details"
+            android:textColor="#0D47A1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Exit Button -->
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Exit Application"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/button_exit"
+            android:textColor="@color/white"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage up to 4 songs in your playlist"
+        android:textSize="14sp"
+        android:textColor="@color/secondary_text"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
